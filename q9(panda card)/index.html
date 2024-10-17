@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Silkscreen:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+       * {
+    font-family: "Silkscreen";
+    font-weight: 400;
+}
+
+#container {
+    border: none;
+    height: 600px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#container>div {
+    height: 70%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#circle {
+    display: inline-flex;
+    margin-bottom: 15px;
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+img {
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+h1, h2, p {
+    margin: 5px 0; 
+}
+
+.gray {
+    color: grey;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#year {
+    font-family: sans-serif;
+    /* color: red; */
+}
+
+#john {
+    color: rgba(142, 142, 24, 0.868);
+    text-transform: lowercase;
+}
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>
+            Title
+        </h1>
+        <h2>
+            Panada Card
+        </h2>
+
+        <div>
+            <div id="circle">
+                <img src="panada.jpg" alt="">
+            </div>
+            <h2 id="john">John Doe</h2>
+            <p class="gray">Computer Science 1</p>
+            <p class="gray">Computer Science 2</p>
+            <p id="year">Year: 3 </p>
+
+            &#9734;&#9734;&#9734;&#9734;&#9734;
+
+
+        </div>
+    </div>
+</body>
+
+</html>

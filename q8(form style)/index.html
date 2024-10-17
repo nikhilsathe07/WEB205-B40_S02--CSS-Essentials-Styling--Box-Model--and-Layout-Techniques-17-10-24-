@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body{
+            background-image: radial-gradient(blue 20%, white 20%, red 80%);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .main {
+            width: 60%; 
+            padding: 15px; 
+            border-radius: 10px;
+            background-color: rgb(229, 226, 226);
+            margin: auto;
+             
+        }
+
+         .main select, .main textarea, .second input{
+            width: 100%;
+            border-radius: 0.5ch;
+            border-style: solid;
+            border: none;
+            
+        }
+
+        #button {
+            color: white;
+            background-color: rgb(18, 216, 18);
+            border-radius: 10%;
+            display: block;
+            margin: auto; 
+            padding: 5px 10px;
+            border: none;
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+    <h2 style="text-align: center;">Feedback Form</h2>
+    <div class="main">
+        <form action="">
+
+            <label for="select">Feedback type:</label><br>
+            <select name="select" id="select">
+                <option value="Compliment">Compliment</option>
+                <option value="Informal">Informal</option>
+                <option value="Positive">Positive</option>
+            </select><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea name="" id="message" rows="5"></textarea><br>
+
+
+            <label for="">Website Rating</label><br>
+            <label>
+                <input type="radio" id="1" name="rating" value="1"> Excellent
+            </label>
+            <label>
+                <input type="radio" id="2" name="rating" value="2"> Good
+            </label>
+            <label>
+                <input type="radio" id="3" name="rating" value="3"> Average
+            </label>
+            <label>
+                <input type="radio" id="4" name="rating" value="4"> Poor
+            </label>
+            <br><br>
+
+
+            <div class="second">
+            <label for="age">Age(10-100):</label><br>
+            <input type="number" id="age" min="10" max="100"><br><br>
+
+            <label for="email">Email<span style="color: red;">*</span>:</label><br>
+            <input type="email" required><br><br>
+
+            <label for="password">Password(min 8 characters):</label><br>
+            <input type="email" name="" id="password" minlength="8"><br><br>
+
+
+            <label for="url">Website URL(optional):</label><br>
+            <input type="url" id="url">
+            </div>
+            <br><br>
+
+            <input type="checkbox" name="" id="checkbox">
+            <label for="checkbox">I agree to the terms and conditions</label><br><br>
+
+
+            <input type="button" name="" id="button" value="Submit" class="buttons">
+
+        </form>
+    </div>
+</body>
+
+</html>
